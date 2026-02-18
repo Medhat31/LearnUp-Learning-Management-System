@@ -1,0 +1,1 @@
+This repository contains the final project for the Client-Side Technologies course at the Information Technology Institute (ITI). The project is a fully client-side website built using HTML5, CSS3, and JavaScript, focusing on modern layout techniques, interactivity, and clean UI design.
