@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Font Awesome CDN -->
+     <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CSS Files Links -->
+    <link rel="stylesheet" href="../CSS_Files/sidebar.css">
+    <link rel="stylesheet" href="../CSS_Files/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="site-name">
+                <div class="cap-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h1>LearnUp</h1>
+            </div>
+
+            <div class="list">
+                <ul>
+                    <li class="selected">
+                        <i class="fa-solid fa-gauge" style="color: white;"></i>
+                        <a href="dashboard.html" style="color: white;">Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-list-check"></i>
+                        <a href="tasks.html">Tasks</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-book-open"></i>
+                        <a href="courses.html">Courses</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                </ul>
+            <div class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <p>Logout</p>
+            </div>
+            </div>
+        </aside>
+        <div>
+           <nav>
+                <div>Dashboard</div>
+                <div>Hello 'Student Name'</div>
+           </nav>
+           <div class="dashboard-content">
+                <div class="statistics">
+                    <div class="total-tasks">
+                        <p>0</p>
+                        <p>Total Tasks</p>
+                    </div>
+                    <div class="completed">
+                        <p>0</p>
+                        <p>Completed</p>
+                    </div>
+                    <div class="pending">
+                        <p>0</p>
+                        <p>Pending</p>
+                    </div>
+                    <div class="active-courses">
+                        <p>0</p>
+                        <p>Active Courses</p>
+                    </div>
+                </div>
+                <div class="announcements-and-time">
+                    <div class="announcements">
+                        <div class="header">
+                            <div>
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <p>Announcements</p>
+                            </div>
+                            <button>Next</button>
+                        </div>
+                        <div class="content">Announcement Content</div>
+                    </div>
+                    <div class="time">
+                        <div>
+                            <p>Current Time</p>
+                            <p>00:00:00</p>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* Navbar style */
+
+:root{
+    --secondary-color: #3b82f6;
+    --main-bg: #f1f5f9;
+}
+
+nav{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    width: 77vw;
+}
+
+nav div:first-child{
+    font-size: 25px;
+    font-weight: bold;
+    color: #121e30;
+}
+
+nav div:last-child{
+    color: #313a4b;
+    font-weight: bold;
+}
+
+/* Dashboard content style */
+
+.dashboard-content{
+    background-color: var(--main-bg);
+    min-height: calc(100vh - 69px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.dashboard-content .statistics{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.dashboard-content .statistics div{
+    background-color: white;
+    padding: 5vh 5vw;
+    border-radius: 10px;
+    box-shadow: 2px 3px 11px 0px black;
+    text-align: center;
+}
+
+.dashboard-content .statistics div p:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dashboard-content .statistics .completed p:first-child{
+    color: #0ab77e
+}
+
+.dashboard-content .statistics .pending p:first-child{
+    color: #f59c05;
+}
+
+.dashboard-content .statistics .active-courses p:first-child{
+    color: #317cf6;
+}
+
+.dashboard-content .announcements-and-time{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dashboard-content .announcements-and-time>div{
+    background-color: white;
+    box-shadow: 2px 3px 11px 0px black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.dashboard-content .announcements-and-time .announcements{
+    width: 60%;
+}
+
+.dashboard-content .announcements-and-time .time{
+    width: 30%;
+}
+
+.dashboard-content .announcements .header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.dashboard-content .announcements .header p{
+    display: inline-block;
+}
+
+.dashboard-content .announcements div i{
+    color: #317cf6;
+    font-size: 20px;
+}
+
+.dashboard-content .announcements div p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.dashboard-content .announcements button{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-bg);
+    transition: 0.5s;
+}
+
+.dashboard-content .announcements button:hover{
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.dashboard-content .announcements .content{
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 3px solid var(--secondary-color);
+    background-color: var(--main-bg);
+}
+
+.dashboard-content .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-content .time p:first-child{
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #617289;
+    font-weight: bold;
+}
+
+.dashboard-content .time p:last-child{
+    font-size: 30px;
+    font-weight: bold;
+}

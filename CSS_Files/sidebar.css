@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+aside{
+    display: inline-block;
+    width: 23vw;
+    min-height: 100vh;
+    background-color: #1c2135;
+    padding: 15px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+aside .site-name{
+    color: white;
+    margin-bottom: 30px;
+}
+
+aside .site-name .cap-icon{
+    display: inline-block;
+    font-size: 27px;
+    margin-right: 5px;
+}
+
+aside .site-name h1{
+    display: inline-block;
+    font-size: 30px;
+}
+
+.list ul{
+    list-style: none;
+}
+
+.list ul li, .logout{
+    color: #9099a1;
+    padding: 10px 40px 10px 10px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.list ul li:hover, .logout:hover{
+    background-color: #3b82f6;
+}
+
+.list ul li a{
+    text-decoration: none;
+    color: #9099a1;
+}
+
+.list ul li:hover i{
+    color: white;
+}
+.list ul li:hover a{
+    color: white;
+}
+
+.logout{
+    position: fixed;
+    left: 15px;
+    bottom: 20px;
+    width: calc(23vw - 40px);
+}
+
+.logout p{
+    display: inline-block;
+}
+
+.logout:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.selected{
+    background-color: #3b82f6;
+    color: white;
+}

@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="">
+        <form>
             <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
             <div class="header"> Welcome Back </div>
             <div class="userName">
@@ -22,10 +22,15 @@
                 <i class="fa-solid fa-key"></i>
                 <input type="password" name="password" id="password" placeholder="Password">
             </div>
+            <div class="error">Invalid user name or password</div>
+            <div class="check">
+                <input type="checkbox" name="checkbox" id="checkbox"> <label for="checkbox">Remember me</label>
+            </div>
             <div class="submit">
                 <input type="submit" value="Sign In" name="login">
             </div>
         </form>
     </div>
+    <script src="../JS_Files/login.js"></script>
 </body>
 </html>
