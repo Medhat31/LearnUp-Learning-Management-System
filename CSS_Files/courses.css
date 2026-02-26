@@ -60,3 +60,40 @@
     background-color: #0a58d6;
     cursor: pointer;
 }
+
+table{
+    margin-top: 30px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 3px 11px 0px black;
+}
+
+
+table tr:first-child{
+    color: #728aa9;
+    font-weight: bold;
+}
+
+table tr:not(:first-child) td{
+    padding-block: 5px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+
+table tr td:last-child button{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(235, 41, 41);
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+table tr td:last-child button:hover{
+    cursor: pointer;
+    background-color: rgb(238, 14, 14);
+}
