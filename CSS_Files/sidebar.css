@@ -56,6 +56,10 @@ aside .site-name h1{
     color: #9099a1;
 }
 
+.list ul li i{
+    margin-right: 5px;
+}
+
 .list ul li:hover i{
     color: white;
 }

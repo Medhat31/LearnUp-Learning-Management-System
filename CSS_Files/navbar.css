@@ -1,0 +1,24 @@
+:root{
+    --main-color: #121e30;
+    --secondary-color: #3b82f6;
+    --main-bg: #f1f5f9;
+      /* --secondary-color: #0a58d6; */
+}
+
+nav{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    width: 77vw;
+}
+
+nav div:first-child{
+    font-size: 25px;
+    font-weight: bold;
+    color: #121e30;
+}
+
+nav div:last-child{
+    color: #313a4b;
+    font-weight: bold;
+}

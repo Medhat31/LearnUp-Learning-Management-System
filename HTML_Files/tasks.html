@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CSS Files Links -->
+    <link rel="stylesheet" href="../CSS_Files/sidebar.css">
+    <link rel="stylesheet" href="../CSS_Files/tasks.css">
+    <link rel="stylesheet" href="../CSS_Files/navbar.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="site-name">
+                <div class="cap-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h1>LearnUp</h1>
+            </div>
+
+            <div class="list">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-gauge"></i>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="selected">
+                        <i class="fa-solid fa-list-check" style="color: white;"></i>
+                        <a href="tasks.html" style="color: white;">Tasks</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-book-open"></i>
+                        <a href="courses.html">Courses</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                </ul>
+                <div class="logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <p>Logout</p>
+                </div>
+            </div>
+        </aside>
+        <div>
+            <nav>
+                <div>Task Management</div>
+                <div>Student Name</div>
+            </nav>
+
+            <div class="main-container">
+                <div class="task-container">
+                    <h2>Add New Task</h2>
+                    <div class="task-data">
+                        <div class="title">
+                            <label for="title">Title</label>
+                            <input type="text" name="title" id="title" placeholder="Task Description">
+                        </div>
+                        <div class="due-date">
+                            <label for="date">Due Date</label>
+                            <input type="date" name="date" id="date">
+                        </div>
+                        <div class="priority">
+                            <label for="priority">Priority</label>
+                            <select name="priority" id="priority">
+                                <option value="Low">Low</option>
+                                <option value="Medium">Medium</option>
+                                <option value="High">High</option>
+                            </select>
+                        </div>
+                        <div class="add-button">
+                            <button>+ Add</button>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input type="search" name="search" id="search" placeholder="Search Tasks...">
+                    </div>
+                </div>
+
+                <table>
+                    <tr>
+                        <td>TASK TITLE</td>
+                        <td>DUE DATE</td>
+                        <td>PRIORITY</td>
+                        <td>STATUS</td>
+                        <td>ACTIONS</td>
+                    </tr>
+                    <tr>
+                        <td>Task 1</td>
+                        <td>Task 2</td>
+                        <td>Task 3</td>
+                        <td>Task 4</td>
+                        <td>
+                            <button>Mark as Done</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

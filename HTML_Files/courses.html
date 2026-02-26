@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CSS Files Links -->
+    <link rel="stylesheet" href="../CSS_Files/sidebar.css">
+    <link rel="stylesheet" href="../CSS_Files/courses.css">
+    <link rel="stylesheet" href="../CSS_Files/navbar.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="site-name">
+                <div class="cap-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h1>LearnUp</h1>
+            </div>
+
+            <div class="list">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-gauge"></i>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-list-check"></i>
+                        <a href="tasks.html">Tasks</a>
+                    </li>
+                    <li class="selected">
+                        <i class="fa-solid fa-book-open" style="color: white;"></i>
+                        <a href="courses.html" style="color: white;">Courses</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                </ul>
+                <div class="logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <p>Logout</p>
+                </div>
+            </div>
+        </aside>
+        <div>
+            <nav>
+                <div>My Courses</div>
+                <div>Student Name</div>
+            </nav>
+            <div class="main-content">
+                <div class="add-course">
+                    <h2>Add New Course</h2>
+                    <div class="fields">
+                        <div>
+                            <label for="course-name">Course Name</label>
+                            <input type="text" name="course-name" id="course-name" placeholder="Enter course name">
+                        </div>
+                        <div>
+                            <label for="instructor">Instructor</label>
+                            <input type="text" name="instructor" id="instructor" placeholder="Enter Instructor name">
+                        </div>
+                        <div>
+                            <button>Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

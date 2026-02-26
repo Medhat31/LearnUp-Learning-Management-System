@@ -1,0 +1,132 @@
+.main-container{
+    width: 77vw;
+    min-height: calc(100vh - 69px);
+    background-color: var(--main-bg);
+    padding: 20px;
+}
+
+.task-container{
+    height: 35vh;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 11px 0px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.task-container h2{
+    color: var(--main-color);
+    font-size: 22px;
+}
+
+.task-container .task-data{
+    display: flex;
+}
+
+.task-container .task-data div{
+    margin-right: 10px;
+}
+
+.task-container .task-data div label {
+    display: block;
+    color: var(--main-color);
+    margin-bottom: 2px;
+}
+
+.task-container .task-data div input,
+.task-container .task-data .priority select,
+.search input
+{
+    border: 2px solid var(--main-bg);
+    border-radius: 5px;
+    height: 35px;
+    width: 15vw;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.task-container .task-data .title input{
+    width: 30vw;
+}
+
+.task-container .task-data div input:focus,
+.task-container .task-data .priority select:focus,
+.search input:focus{
+    outline: 2px solid var(--secondary-color);
+}
+
+.task-container .add-button button{
+    height: 35px;
+    width: 5vw;
+    margin-top: 22px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.task-container .add-button button:hover{
+    background-color: #0a58d6;
+    cursor: pointer;
+}
+
+.search input{
+    width: 67vw;
+}
+
+/* Table Style */
+
+table{
+    margin-top: 30px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 3px 11px 0px black;
+}
+
+table tr:first-child{
+    color: #728aa9;
+    font-weight: bold;
+}
+
+table tr:not(:first-child) td{
+    padding-block: 5px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+table tr td:last-child button:first-child{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(44, 194, 44);
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+table tr td:last-child button:first-child:hover{
+     cursor: pointer;
+    background-color: rgb(17, 209, 17);
+}
+
+table tr td:last-child button:last-child{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(235, 41, 41);
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+table tr td:last-child button:last-child:hover{
+    cursor: pointer;
+    background-color: rgb(238, 14, 14);
+}
