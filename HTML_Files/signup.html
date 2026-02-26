@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - LearnUp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../CSS_Files/login.css">
+</head>
+<body>
+    <div class="container">
+        <form id="signupForm">
+            <div class="icon"><i class="fa-solid fa-user-plus"></i></div>
+            <div class="header"> Create Account </div>
+            
+            <div class="userName">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="newUserName" id="newUserName" placeholder="User Name">
+            </div>
+            
+            <div class="password">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="newPassword" id="newPassword" placeholder="Password">
+            </div>
+
+            <div class="password" style="margin-top: 20px;">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+            </div>
+            
+          <div class="error" id="signupError" style="display: none; color: red; text-align: center; margin-bottom: 15px; font-size: 20px;">Passwords do not match</div>
+            
+            <div class="comment">
+               Already have an account? <a href="login.html">Sign In</a>
+            </div>
+            
+            <div class="submit">
+                <input type="submit" value="Sign Up" name="signup">
+            </div>
+        </form>
+    </div>
+    
+    <script src="../JS_Files/signup.js"></script>
+</body>
+</html>
