@@ -13,24 +13,24 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (newUsername && newUsername !== currentUser) {
             
-            // 1. Migrate user's Tasks
+            // Migrate user's Tasks
             const oldTasks = localStorage.getItem(`tasks_${currentUser}`);
             if (oldTasks) {
                 localStorage.setItem(`tasks_${newUsername}`, oldTasks);
                 localStorage.removeItem(`tasks_${currentUser}`);
             }
 
-            // 2. Migrate user's Courses
+            // Migrate user's Courses
             const oldCourses = localStorage.getItem(`courses_${currentUser}`);
             if (oldCourses) {
                 localStorage.setItem(`courses_${newUsername}`, oldCourses);
                 localStorage.removeItem(`courses_${currentUser}`);
             }
 
-            // 3. Update the global loggedInUser token
+            // Update the global loggedInUser token
             localStorage.setItem('loggedInUser', newUsername);
             
-            // 4. Update the 'registeredUsers' array if you are using the signup page logic
+            // Update the 'registeredUsers' array if you are using the signup page logic
             let registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
             let userIndex = registeredUsers.findIndex(u => u.username === currentUser);
             if(userIndex !== -1) {

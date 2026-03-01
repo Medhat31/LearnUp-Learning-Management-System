@@ -127,3 +127,33 @@
     font-size: 30px;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .dashboard-content {
+        padding: 10px;
+    }
+
+    .dashboard-content .statistics {
+        gap: 20px;
+    }
+
+    .dashboard-content .statistics div {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .dashboard-content .announcements-and-time {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .dashboard-content .announcements-and-time .announcements,
+    .dashboard-content .announcements-and-time .time {
+        width: 90%;
+    }
+}

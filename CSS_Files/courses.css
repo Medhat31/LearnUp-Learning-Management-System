@@ -97,3 +97,36 @@ table tr td:last-child button:hover{
     cursor: pointer;
     background-color: rgb(238, 14, 14);
 }
+
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .add-course .fields {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .add-course .fields div {
+        margin-right: 0;
+    }
+
+    .add-course .fields div input {
+        width: 100%;
+    }
+
+    .add-course button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    /* Table responsiveness */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 5px;
+    }
+}

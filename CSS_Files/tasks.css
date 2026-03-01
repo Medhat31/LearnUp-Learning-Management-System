@@ -130,3 +130,49 @@ table tr td:last-child button:last-child:hover{
     cursor: pointer;
     background-color: rgb(238, 14, 14);
 }
+
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .task-container {
+        height: auto;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .task-container .task-data {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .task-container .task-data div {
+        margin-right: 0;
+    }
+
+    .task-container .task-data div input,
+    .task-container .task-data .priority select,
+    .task-container .task-data .title input,
+    .search input {
+        width: 100%;
+    }
+
+    .task-container .add-button button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    /* Enables horizontal scroll for the table on small screens */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

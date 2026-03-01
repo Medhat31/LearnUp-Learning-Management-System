@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentUser = localStorage.getItem('loggedInUser');
     if (!currentUser) return; // auth.js will handle the redirect
 
-    // 1. Clock functionality
+    // Clock functionality
     const timeDisplay = document.querySelector('.time div p:nth-child(2)');
     if (timeDisplay) {
         setInterval(() => {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     }
 
-    // 2. Announcements
+    // Announcements
     const announcements = [
         "Welcome to the LearnUp LMS!",
         "Midterm exams begin next week.",

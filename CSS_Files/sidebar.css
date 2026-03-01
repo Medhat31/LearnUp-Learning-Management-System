@@ -87,3 +87,24 @@ aside .site-name h1{
     background-color: #3b82f6;
     color: white;
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    aside {
+        width: 100%;
+        min-height: auto;
+    }
+    .list ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    .logout {
+        position: static;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}

@@ -22,3 +22,13 @@ nav div:last-child{
     color: #313a4b;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+}

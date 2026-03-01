@@ -1,19 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Login script loaded successfully."); // Debug check
+    console.log("Login script loaded successfully."); 
 
     if (localStorage.getItem('loggedInUser')) {
         window.location.href = 'dashboard.html';
         return; 
     }
 
-    // Use the explicit ID instead of just 'form'
+    
     const form = document.getElementById('loginForm');
     const errorDiv = document.getElementById('loginError');
 
+    const rememberMe = document.getElementById('checkbox');
+    const savedUser = localStorage.getItem('rememberedUser');
+    const savedPass = localStorage.getItem('rememberedPass');
+
+    if (savedUser && savedPass) {
+        document.getElementById('userName').value = savedUser;
+        document.getElementById('password').value = savedPass;
+        rememberMe.checked = true;
+    }
+
     if (form) {
         form.addEventListener('submit', (e) => {
-            e.preventDefault(); // Stop page from refreshing
-            console.log("Submit button clicked, page refresh prevented."); // Debug check
+            e.preventDefault(); 
+            console.log("Submit button clicked, page refresh prevented.");
             
             errorDiv.style.display = 'none'; 
             
@@ -42,6 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 errorDiv.textContent = 'Incorrect password.';
                 errorDiv.style.display = 'block';
                 return;
+            }
+
+            if (rememberMe.checked) {
+                localStorage.setItem('rememberedUser', user);
+                localStorage.setItem('rememberedPass', pass);
+            } else {
+                localStorage.removeItem('rememberedUser');
+                localStorage.removeItem('rememberedPass');
             }
 
             console.log("Login successful! Redirecting...");
